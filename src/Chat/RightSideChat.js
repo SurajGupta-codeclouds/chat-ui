@@ -1,7 +1,7 @@
 import { Divider, Input, Form, Button } from "antd";
 import { SendOutlined } from "@ant-design/icons";
 import { Scrollbars } from "react-custom-scrollbars";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import moment from "moment";
 import Lottie from "react-lottie";
 import typingGif from "../Assets/typing.json";
