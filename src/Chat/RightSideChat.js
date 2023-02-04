@@ -21,7 +21,6 @@ const RightSideChat = ({ messages, handleSubmit, typings, isTyping }) => {
   };
 
   // console.log("selectChat", selectChat.selectChat._id)
-  const [inputMsgVal, setInputMsgVal] = useState(null)
 
   const chatBodyRef = useRef();
   const [form] = Form.useForm()
@@ -43,7 +42,6 @@ const RightSideChat = ({ messages, handleSubmit, typings, isTyping }) => {
   const onFinish = async (values) => {
     console.log("values", values);
     handleSubmit(values);
-    setInputMsgVal(null)
      form.resetFields()
   };
 
@@ -51,7 +49,6 @@ const RightSideChat = ({ messages, handleSubmit, typings, isTyping }) => {
   senderId = senderId?._id;
 
   const handleTyping = (e) => {
-    setInputMsgVal(e.target.value)
     typings();
   };
 

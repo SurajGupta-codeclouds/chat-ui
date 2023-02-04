@@ -76,6 +76,7 @@ const Chat = () => {
       config
     );
     Toast("single", "success", "", "Friend added successfully");
+    console.log(data)
   };
 
   const listingChat = async () => {
